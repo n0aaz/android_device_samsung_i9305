@@ -33,7 +33,7 @@ COMMON_GLOBAL_CFLAGS += -DCAMERA_WITH_CITYID_PARAM
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
-TARGET_KERNEL_CONFIG := cyanogenmod_i9305_defconfig
+TARGET_KERNEL_CONFIG := custom_i9305_defconfig
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/i9305/rootdir/fstab.smdk4x12
@@ -81,22 +81,22 @@ BOARD_SEPOLICY_UNION += \
     zygote.te
 
 #RR
-TARGET_TC_ROM := 4.9
+#TARGET_TC_ROM := 4.9
 
-TARGET_TC_KERNEL := 5.1
+#TARGET_TC_KERNEL := 5.1
 
-RROPTI := true
+#RROPTI := true
 
-RR_O3 := true
+#RR_O3 := true
 
-RR_STRICT := false
+#RR_STRICT := false
 
-RR_GRAPHITE := true
+#RR_GRAPHITE := true
 
-RR_KRAIT := false
+#RR_KRAIT := false
 
-RR_PIPE := true
+#RR_PIPE := true
 
-RR_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+#RR_GCC_VERSION_EXP := $(TARGET_TC_ROM)
 
-RR_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+#RR_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
