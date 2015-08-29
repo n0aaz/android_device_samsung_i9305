@@ -25,6 +25,9 @@ LOCAL_PATH := device/samsung/i9305
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
+# Bionic
+MALLOC_IMPL := dlmalloc
+
 # RIL
 COMMON_GLOBAL_CFLAGS += -DPROPERTY_PERMS_APPEND='{ "ril.ks.status", AID_SYSTEM, 0 },'
 
